@@ -5504,11 +5504,11 @@ This is the "EZ" version, which has limited top masking for improved ease of ass
 <part name="C15" library="SparkFun-Capacitors" deviceset="CAP" device="1206" value="0.1uF"/>
 <part name="GND25" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SW_PWR" library="SparkFun-Electromechanical" deviceset="TAC_SWITCH" device="KSA_SEALED"/>
-<part name="R8" library="SparkFun-Passives" deviceset="RESISTOR" device="1206" value="10k"/>
+<part name="R8" library="SparkFun-Passives" deviceset="RESISTOR" device="1206" value="24k"/>
 <part name="GND26" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="T1" library="mbed-HDK" deviceset="BSS84" device=""/>
 <part name="T2" library="mbed-HDK" deviceset="BSS84" device=""/>
-<part name="R9" library="SparkFun-Passives" deviceset="RESISTOR" device="1206" value="10k"/>
+<part name="R9" library="SparkFun-Passives" deviceset="RESISTOR" device="1206" value="24K"/>
 <part name="SJ3" library="SparkFun-Passives" deviceset="SOLDERJUMPER" device="NO"/>
 <part name="R10" library="SparkFun-Passives" deviceset="RESISTOR" device="1206" value="1k5"/>
 <part name="R11" library="SparkFun-Passives" deviceset="RESISTOR" device="1206" value="33"/>
@@ -5546,7 +5546,7 @@ This is the "EZ" version, which has limited top masking for improved ease of ass
 <part name="SJ5" library="SparkFun-Passives" deviceset="SOLDERJUMPER" device="NO"/>
 <part name="R2" library="SparkFun-Passives" deviceset="RESISTOR" device="1206" value="2k"/>
 <part name="GND31" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="SW_PWR1" library="SparkFun-Electromechanical" deviceset="TAC_SWITCH" device="KSA_SEALED"/>
+<part name="SW_MODE" library="SparkFun-Electromechanical" deviceset="TAC_SWITCH" device="KSA_SEALED"/>
 <part name="GND32" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 </parts>
 <sheets>
@@ -5664,8 +5664,8 @@ This is the "EZ" version, which has limited top masking for improved ease of ass
 <instance part="SJ5" gate="1" x="-66.04" y="-12.7"/>
 <instance part="R2" gate="G$1" x="-78.74" y="-17.78" rot="R90"/>
 <instance part="GND31" gate="1" x="-78.74" y="-27.94"/>
-<instance part="SW_PWR1" gate="S" x="-302.26" y="-30.48"/>
-<instance part="GND32" gate="1" x="-314.96" y="-43.18"/>
+<instance part="SW_MODE" gate="S" x="-248.92" y="-35.56"/>
+<instance part="GND32" gate="1" x="-261.62" y="-48.26"/>
 </instances>
 <busses>
 </busses>
@@ -5874,6 +5874,10 @@ This is the "EZ" version, which has limited top masking for improved ease of ass
 <wire x1="-294.64" y1="91.44" x2="-297.18" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="-297.18" y1="91.44" x2="-297.18" y2="83.82" width="0.1524" layer="91"/>
 <junction x="-297.18" y="83.82"/>
+<pinref part="SW_PWR" gate="S" pin="1"/>
+<wire x1="-294.64" y1="93.98" x2="-297.18" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="-297.18" y1="93.98" x2="-297.18" y2="91.44" width="0.1524" layer="91"/>
+<junction x="-297.18" y="91.44"/>
 </segment>
 <segment>
 <pinref part="C15" gate="G$1" pin="2"/>
@@ -5994,15 +5998,15 @@ This is the "EZ" version, which has limited top masking for improved ease of ass
 <wire x1="-78.74" y1="-25.4" x2="-78.74" y2="-22.86" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="SW_PWR1" gate="S" pin="2"/>
+<pinref part="SW_MODE" gate="S" pin="2"/>
 <pinref part="GND32" gate="1" pin="GND"/>
-<wire x1="-307.34" y1="-33.02" x2="-309.88" y2="-33.02" width="0.1524" layer="91"/>
-<wire x1="-309.88" y1="-33.02" x2="-314.96" y2="-33.02" width="0.1524" layer="91"/>
-<wire x1="-314.96" y1="-33.02" x2="-314.96" y2="-40.64" width="0.1524" layer="91"/>
-<pinref part="SW_PWR1" gate="S" pin="1"/>
-<wire x1="-307.34" y1="-30.48" x2="-309.88" y2="-30.48" width="0.1524" layer="91"/>
-<wire x1="-309.88" y1="-30.48" x2="-309.88" y2="-33.02" width="0.1524" layer="91"/>
-<junction x="-309.88" y="-33.02"/>
+<wire x1="-254" y1="-38.1" x2="-256.54" y2="-38.1" width="0.1524" layer="91"/>
+<wire x1="-256.54" y1="-38.1" x2="-261.62" y2="-38.1" width="0.1524" layer="91"/>
+<wire x1="-261.62" y1="-38.1" x2="-261.62" y2="-45.72" width="0.1524" layer="91"/>
+<pinref part="SW_MODE" gate="S" pin="1"/>
+<wire x1="-254" y1="-35.56" x2="-256.54" y2="-35.56" width="0.1524" layer="91"/>
+<wire x1="-256.54" y1="-35.56" x2="-256.54" y2="-38.1" width="0.1524" layer="91"/>
+<junction x="-256.54" y="-38.1"/>
 </segment>
 </net>
 <net name="3.3V" class="0">
@@ -6250,42 +6254,6 @@ This is the "EZ" version, which has limited top masking for improved ease of ass
 <label x="88.9" y="-68.58" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="PIO_0" class="0">
-<segment>
-<pinref part="JTAG1" gate="G$1" pin="10"/>
-<wire x1="-139.7" y1="99.06" x2="-129.54" y2="99.06" width="0.1524" layer="91"/>
-<label x="-132.08" y="99.06" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="PIO_9" class="0">
-<segment>
-<pinref part="JTAG1" gate="G$1" pin="6"/>
-<wire x1="-139.7" y1="104.14" x2="-129.54" y2="104.14" width="0.1524" layer="91"/>
-<label x="-132.08" y="104.14" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="PIO_10" class="0">
-<segment>
-<pinref part="JTAG1" gate="G$1" pin="4"/>
-<wire x1="-139.7" y1="106.68" x2="-134.62" y2="106.68" width="0.1524" layer="91"/>
-<pinref part="R4" gate="G$1" pin="2"/>
-<wire x1="-134.62" y1="106.68" x2="-129.54" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="-134.62" y1="106.68" x2="-134.62" y2="96.52" width="0.1524" layer="91"/>
-<junction x="-134.62" y="106.68"/>
-<label x="-132.08" y="106.68" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="PIO_15" class="0">
-<segment>
-<pinref part="JTAG1" gate="G$1" pin="2"/>
-<wire x1="-139.7" y1="109.22" x2="-134.62" y2="109.22" width="0.1524" layer="91"/>
-<pinref part="R3" gate="G$1" pin="1"/>
-<wire x1="-134.62" y1="109.22" x2="-129.54" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="-134.62" y1="111.76" x2="-134.62" y2="109.22" width="0.1524" layer="91"/>
-<junction x="-134.62" y="109.22"/>
-<label x="-132.08" y="109.22" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="RST" class="0">
 <segment>
 <pinref part="U5" gate="A" pin="*RST"/>
@@ -6301,6 +6269,11 @@ This is the "EZ" version, which has limited top masking for improved ease of ass
 <pinref part="IC1" gate="G$1" pin="PIO0.0/NRESET"/>
 <wire x1="-38.1" y1="73.66" x2="-45.72" y2="73.66" width="0.1524" layer="91"/>
 <label x="-45.72" y="73.66" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="JTAG1" gate="G$1" pin="10"/>
+<wire x1="-139.7" y1="99.06" x2="-129.54" y2="99.06" width="0.1524" layer="91"/>
+<label x="-132.08" y="99.06" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$10" class="0">
@@ -6466,10 +6439,15 @@ This is the "EZ" version, which has limited top masking for improved ease of ass
 <net name="N$1" class="0">
 <segment>
 <pinref part="SW_PWR" gate="S" pin="4"/>
-<wire x1="-284.48" y1="91.44" x2="-274.32" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="-284.48" y1="91.44" x2="-281.94" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="-281.94" y1="91.44" x2="-274.32" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="-274.32" y1="91.44" x2="-274.32" y2="86.36" width="0.1524" layer="91"/>
 <pinref part="U8" gate="A" pin="IN"/>
 <wire x1="-274.32" y1="86.36" x2="-266.7" y2="86.36" width="0.1524" layer="91"/>
+<pinref part="SW_PWR" gate="S" pin="3"/>
+<wire x1="-284.48" y1="93.98" x2="-281.94" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="-281.94" y1="93.98" x2="-281.94" y2="91.44" width="0.1524" layer="91"/>
+<junction x="-281.94" y="91.44"/>
 </segment>
 </net>
 <net name="N$15" class="0">
@@ -6727,6 +6705,15 @@ This is the "EZ" version, which has limited top masking for improved ease of ass
 <wire x1="-38.1" y1="30.48" x2="-45.72" y2="30.48" width="0.1524" layer="91"/>
 <label x="-50.8" y="30.48" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="JTAG1" gate="G$1" pin="2"/>
+<wire x1="-139.7" y1="109.22" x2="-134.62" y2="109.22" width="0.1524" layer="91"/>
+<pinref part="R3" gate="G$1" pin="1"/>
+<wire x1="-134.62" y1="109.22" x2="-129.54" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="-134.62" y1="111.76" x2="-134.62" y2="109.22" width="0.1524" layer="91"/>
+<junction x="-134.62" y="109.22"/>
+<label x="-132.08" y="109.22" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="SPI_MISO0" class="0">
 <segment>
@@ -6741,12 +6728,26 @@ This is the "EZ" version, which has limited top masking for improved ease of ass
 <wire x1="-38.1" y1="45.72" x2="-45.72" y2="45.72" width="0.1524" layer="91"/>
 <label x="-50.8" y="45.72" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="JTAG1" gate="G$1" pin="6"/>
+<wire x1="-139.7" y1="104.14" x2="-129.54" y2="104.14" width="0.1524" layer="91"/>
+<label x="-132.08" y="104.14" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="SWCLK" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="SWCLK/PIO0.10/SCK0/CT16B0M2"/>
 <wire x1="-38.1" y1="43.18" x2="-45.72" y2="43.18" width="0.1524" layer="91"/>
 <label x="-50.8" y="43.18" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="JTAG1" gate="G$1" pin="4"/>
+<wire x1="-139.7" y1="106.68" x2="-134.62" y2="106.68" width="0.1524" layer="91"/>
+<pinref part="R4" gate="G$1" pin="2"/>
+<wire x1="-134.62" y1="106.68" x2="-129.54" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="-134.62" y1="106.68" x2="-134.62" y2="96.52" width="0.1524" layer="91"/>
+<junction x="-134.62" y="106.68"/>
+<label x="-132.08" y="106.68" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="BOOTLOAD" class="0">
@@ -6770,15 +6771,14 @@ This is the "EZ" version, which has limited top masking for improved ease of ass
 </net>
 <net name="SW_MODE" class="0">
 <segment>
-<pinref part="SW_PWR1" gate="S" pin="3"/>
-<wire x1="-297.18" y1="-30.48" x2="-294.64" y2="-30.48" width="0.1524" layer="91"/>
-<wire x1="-294.64" y1="-30.48" x2="-294.64" y2="-33.02" width="0.1524" layer="91"/>
-<pinref part="SW_PWR1" gate="S" pin="4"/>
-<wire x1="-294.64" y1="-33.02" x2="-297.18" y2="-33.02" width="0.1524" layer="91"/>
-<wire x1="-294.64" y1="-33.02" x2="-287.02" y2="-33.02" width="0.1524" layer="91"/>
-<junction x="-294.64" y="-33.02"/>
-<wire x1="-284.48" y1="-33.02" x2="-287.02" y2="-33.02" width="0.1524" layer="91"/>
-<label x="-292.1" y="-33.02" size="1.778" layer="95"/>
+<pinref part="SW_MODE" gate="S" pin="3"/>
+<wire x1="-243.84" y1="-35.56" x2="-241.3" y2="-35.56" width="0.1524" layer="91"/>
+<wire x1="-241.3" y1="-35.56" x2="-241.3" y2="-38.1" width="0.1524" layer="91"/>
+<pinref part="SW_MODE" gate="S" pin="4"/>
+<wire x1="-241.3" y1="-38.1" x2="-243.84" y2="-38.1" width="0.1524" layer="91"/>
+<wire x1="-241.3" y1="-38.1" x2="-231.14" y2="-38.1" width="0.1524" layer="91"/>
+<junction x="-241.3" y="-38.1"/>
+<label x="-238.76" y="-38.1" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>

@@ -1147,10 +1147,10 @@ design rules under a new name.</description>
 <element name="R7" library="SparkFun-Passives" package="1206" value="470" x="-20.32" y="72.39"/>
 <element name="C15" library="SparkFun-Capacitors" package="1206" value="0.1uF" x="-50.8" y="68.58"/>
 <element name="SW_PWR" library="SparkFun-Electromechanical" package="KSA_SEALED_TAC_SWITCH" value="" x="44.45" y="15.24" rot="MR0"/>
-<element name="R8" library="SparkFun-Passives" package="1206" value="10k" x="-25.4" y="72.39"/>
+<element name="R8" library="SparkFun-Passives" package="1206" value="24k" x="-25.4" y="72.39"/>
 <element name="T1" library="mbed-HDK" package="SOT23" value="BSS84" x="-60.96" y="35.56"/>
 <element name="T2" library="mbed-HDK" package="SOT23" value="BSS84" x="53.34" y="68.58"/>
-<element name="R9" library="SparkFun-Passives" package="1206" value="10k" x="-30.48" y="72.39"/>
+<element name="R9" library="SparkFun-Passives" package="1206" value="24K" x="-30.48" y="72.39"/>
 <element name="SJ3" library="SparkFun-Passives" package="SJ_2S-NO" value="SOLDERJUMPERNO" x="-54.61" y="59.69"/>
 <element name="R10" library="SparkFun-Passives" package="1206" value="1k5" x="-35.56" y="72.39"/>
 <element name="R11" library="SparkFun-Passives" package="1206" value="33" x="-40.64" y="72.39"/>
@@ -1175,7 +1175,7 @@ design rules under a new name.</description>
 <element name="SJ4" library="SparkFun-Passives" package="SJ_3" value="" x="-71.12" y="-12.7"/>
 <element name="SJ5" library="SparkFun-Passives" package="SJ_2S-NO" value="SOLDERJUMPERNO" x="-74.93" y="-12.7"/>
 <element name="R2" library="SparkFun-Passives" package="1206" value="2k" x="-73.66" y="-17.78"/>
-<element name="SW_PWR1" library="SparkFun-Electromechanical" package="KSA_SEALED_TAC_SWITCH" value="" x="-71.12" y="-24.13"/>
+<element name="SW_MODE" library="SparkFun-Electromechanical" package="KSA_SEALED_TAC_SWITCH" value="" x="-71.12" y="-24.13"/>
 </elements>
 <signals>
 <signal name="VBAT">
@@ -1257,8 +1257,9 @@ design rules under a new name.</description>
 <contactref element="C16" pad="1"/>
 <contactref element="C17" pad="1"/>
 <contactref element="R2" pad="1"/>
-<contactref element="SW_PWR1" pad="P$2"/>
-<contactref element="SW_PWR1" pad="P$1"/>
+<contactref element="SW_MODE" pad="P$2"/>
+<contactref element="SW_MODE" pad="P$1"/>
+<contactref element="SW_PWR" pad="P$1"/>
 <wire x1="55.88" y1="50.22" x2="57.15" y2="50.22" width="0" layer="19" extent="1-1"/>
 <wire x1="54.61" y1="50.22" x2="55.88" y2="50.22" width="0" layer="19" extent="1-1"/>
 <wire x1="53.34" y1="50.22" x2="54.61" y2="50.22" width="0" layer="19" extent="1-1"/>
@@ -1267,6 +1268,7 @@ design rules under a new name.</description>
 <wire x1="28.67" y1="52.05" x2="28.67" y2="51.55" width="0" layer="19" extent="1-1"/>
 <wire x1="31.6738" y1="26.035" x2="28.67" y2="50.55" width="0" layer="19" extent="1-1"/>
 <wire x1="40.64" y1="17.78" x2="31.6738" y2="26.035" width="0" layer="19" extent="1-1"/>
+<wire x1="48.26" y1="17.78" x2="40.64" y2="17.78" width="0" layer="19" extent="1-1"/>
 <wire x1="36.18" y1="10.68" x2="40.64" y2="17.78" width="0" layer="19" extent="1-1"/>
 <wire x1="29.23" y1="5.73" x2="36.18" y2="10.68" width="0" layer="19" extent="1-1"/>
 <wire x1="20.4724" y1="20.32" x2="31.6738" y2="26.035" width="0" layer="19" extent="1-1"/>
@@ -1279,7 +1281,7 @@ design rules under a new name.</description>
 <wire x1="1.27" y1="11.62" x2="10.5156" y2="14.2494" width="0" layer="19" extent="1-1"/>
 <wire x1="3.92" y1="6.32" x2="1.27" y2="11.62" width="0" layer="19" extent="1-1"/>
 <wire x1="1.27" y1="3.62" x2="3.92" y2="6.32" width="0" layer="19" extent="1-1"/>
-<wire x1="53.12" y1="5.08" x2="40.64" y2="17.78" width="0" layer="19" extent="16-16"/>
+<wire x1="53.12" y1="5.08" x2="48.26" y2="17.78" width="0" layer="19" extent="16-16"/>
 <wire x1="-32.2" y1="14.82" x2="1.27" y2="11.62" width="0" layer="19" extent="1-1"/>
 <wire x1="-35.19" y1="12.17" x2="-32.2" y2="14.82" width="0" layer="19" extent="1-1"/>
 <wire x1="-45.35" y1="15.82" x2="-35.19" y2="12.17" width="0" layer="19" extent="1-1"/>
@@ -1431,26 +1433,12 @@ design rules under a new name.</description>
 <signal name="SD_DETECT">
 <contactref element="U1" pad="CD2"/>
 </signal>
-<signal name="PIO_0">
-<contactref element="JTAG1" pad="10"/>
-</signal>
-<signal name="PIO_9">
-<contactref element="JTAG1" pad="6"/>
-</signal>
-<signal name="PIO_10">
-<contactref element="JTAG1" pad="4"/>
-<contactref element="R4" pad="2"/>
-<wire x1="53.34" y1="53.92" x2="-13.84" y2="72.39" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="PIO_15">
-<contactref element="JTAG1" pad="2"/>
-<contactref element="R3" pad="1"/>
-<wire x1="-67.44" y1="68.58" x2="52.07" y2="53.92" width="0" layer="19" extent="1-1"/>
-</signal>
 <signal name="RST">
 <contactref element="U5" pad="4"/>
 <contactref element="U$1" pad="14"/>
 <contactref element="IC1" pad="4"/>
+<contactref element="JTAG1" pad="10"/>
+<wire x1="26.7462" y1="26.035" x2="57.15" y2="53.92" width="0" layer="19" extent="1-1"/>
 <wire x1="36.18" y1="9.18" x2="26.7462" y2="26.035" width="0" layer="19" extent="1-1"/>
 <wire x1="-25.18" y1="64.77" x2="26.7462" y2="26.035" width="0" layer="19" extent="1-1"/>
 </signal>
@@ -1537,6 +1525,8 @@ design rules under a new name.</description>
 <signal name="N$1">
 <contactref element="SW_PWR" pad="P$4"/>
 <contactref element="U8" pad="1"/>
+<contactref element="SW_PWR" pad="P$3"/>
+<wire x1="40.64" y1="12.7" x2="48.26" y2="12.7" width="0" layer="19" extent="1-1"/>
 <wire x1="20.4724" y1="21.2598" x2="40.64" y2="12.7" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$15">
@@ -1680,15 +1670,25 @@ design rules under a new name.</description>
 </signal>
 <signal name="SWDIO">
 <contactref element="IC1" pad="52"/>
+<contactref element="JTAG1" pad="2"/>
+<contactref element="R3" pad="1"/>
+<wire x1="28.23" y1="5.73" x2="52.07" y2="53.92" width="0" layer="19" extent="1-1"/>
+<wire x1="-67.44" y1="68.58" x2="28.23" y2="5.73" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SPI_MISO0">
 <contactref element="IC1" pad="36"/>
 </signal>
 <signal name="SPI_MOSI0">
 <contactref element="IC1" pad="37"/>
+<contactref element="JTAG1" pad="6"/>
+<wire x1="24.78" y1="13.18" x2="54.61" y2="53.92" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SWCLK">
 <contactref element="IC1" pad="38"/>
+<contactref element="JTAG1" pad="4"/>
+<contactref element="R4" pad="2"/>
+<wire x1="24.78" y1="12.68" x2="53.34" y2="53.92" width="0" layer="19" extent="1-1"/>
+<wire x1="-13.84" y1="72.39" x2="53.34" y2="53.92" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="BOOTLOAD">
 <contactref element="IC1" pad="5"/>
@@ -1701,8 +1701,8 @@ design rules under a new name.</description>
 <wire x1="-75.38" y1="-12.7" x2="-72.26" y2="-17.78" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SW_MODE">
-<contactref element="SW_PWR1" pad="P$3"/>
-<contactref element="SW_PWR1" pad="P$4"/>
+<contactref element="SW_MODE" pad="P$3"/>
+<contactref element="SW_MODE" pad="P$4"/>
 <wire x1="-67.31" y1="-26.67" x2="-74.93" y2="-26.67" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>

@@ -1,0 +1,64 @@
+Partlist
+
+Exported from swimate.sch at 5/4/14 3:57 PM
+
+EAGLE Version 6.4.0 Copyright (c) 1988-2013 CadSoft
+
+Assembly variant: 
+
+Part     Value          Device               Package               Library                    Sheet
+
+C1       18pF           CAP1206              1206                  SparkFun-Capacitors        1
+C2       18pF           CAP1206              1206                  SparkFun-Capacitors        1
+C3                      CAP0805              0805                  SparkFun-Capacitors        1
+C4       10nF           CAP1206              1206                  SparkFun-Capacitors        1
+C5       0.1uF          CAP1206              1206                  SparkFun-Capacitors        1
+C6       0.1uF          CAP1206              1206                  SparkFun-Capacitors        1
+C7       2.2nF          CAP1206              1206                  SparkFun-Capacitors        1
+C8       0.1uF          CAP1206              1206                  SparkFun-Capacitors        1
+C9       0.1uF          CAP1206              1206                  SparkFun-Capacitors        1
+C10      0.1uF          CAP1206              1206                  SparkFun-Capacitors        1
+C11      1uF            CAP1206              1206                  SparkFun-Capacitors        1
+C12      1uF            CAP1206              1206                  SparkFun-Capacitors        1
+C13      .22uF          CAP1206              1206                  SparkFun-Capacitors        1
+C14      4u7            CAP1206              1206                  SparkFun-Passives          1
+C15      0.1uF          CAP1206              1206                  SparkFun-Capacitors        1
+C16      18pF           CAP1206              1206                  SparkFun-Capacitors        1
+C17      18pF           CAP1206              1206                  SparkFun-Capacitors        1
+C18                     CAP0805              0805                  SparkFun-Capacitors        1
+C19                     CAP0805              0805                  SparkFun-Capacitors        1
+C20                     CAP0805              0805                  SparkFun-Capacitors        1
+C21      2.2uF          CAP0805              0805                  SparkFun-Capacitors        1
+C22      10uF           CAP0805              0805                  SparkFun-Capacitors        1
+IC1      LPC11U24       LPC11U24             MBED-ICS_LQFP64       mbed-HDK                   1
+J2                      JST_2MM_MALE         JST-2-SMD             SparkFun-Connectors        1
+JP2                     M08                  1X08_PIN1_NO_SILK     SparkFun-Connectors        1
+JP3      USB-MICROB     USB-MICROB           USB-MICROB            SparkFun-Connectors        1
+JTAG1                   JTAG-CORTEXM3MOLEX   CORTEXM3_SWD10_MOLEX  microbuilder               1
+LED2                    LED1206              LED-1206              SparkFun-LED               1
+R1       390K           RESISTOR0805-RES     0805                  SparkFun-Passives          1
+R3       24k            RESISTOR1206         1206                  SparkFun-Passives          1
+R4       24k            RESISTOR1206         1206                  SparkFun-Passives          1
+R5                      RESISTOR1206         1206                  SparkFun-Passives          1
+R6                      RESISTOR1206         1206                  SparkFun-Passives          1
+R7       470            RESISTOR1206         1206                  SparkFun-Passives          1
+R8       10k            RESISTOR1206         1206                  SparkFun-Passives          1
+R9       10k            RESISTOR1206         1206                  SparkFun-Passives          1
+R10      1k5            RESISTOR1206         1206                  SparkFun-Passives          1
+R11      33             RESISTOR1206         1206                  SparkFun-Passives          1
+R12      33             RESISTOR1206         1206                  SparkFun-Passives          1
+SJ1      SOLDERJUMPERNO SOLDERJUMPERNO       SJ_2S-NO              SparkFun-Passives          1
+SJ2      SOLDERJUMPERNO SOLDERJUMPERNO       SJ_2S-NO              SparkFun-Passives          1
+SJ3      SOLDERJUMPERNO SOLDERJUMPERNO       SJ_2S-NO              SparkFun-Passives          1
+SW_PWR                  TAC_SWITCHKSA_SEALED KSA_SEALED_TAC_SWITCH SparkFun-Electromechanical 1
+T1       BSS84          BSS84                SOT23                 mbed-HDK                   1
+T2       BSS84          BSS84                SOT23                 mbed-HDK                   1
+U$1      UG-2864HSWEG01 UG-2864HSWEG01       1X30-0.7MM            adafruit                   1
+U1       USD-SOCKETNEW  USD-SOCKETNEW        MICRO-SD-SOCKET-PP    SparkFun-Connectors        1
+U2                      MPU-9150QFN-24-NP    QFN-24-NP             SparkFun-Sensors           1
+U5       DS3231MZ/V+T   DS3231MZ/V+T         21-0041B_8            maximparts                 1
+U6       MAX1595EUA33+  MAX1595EUA33+        21-0036K              maximparts                 1
+U7       MAX1811ESA-T   MAX1811ESA-T         21-0041B_8            maximparts                 1
+U8       MAX16054AZT+T  MAX16054AZT+T        21-0114C              maximparts                 1
+U9       HC_05          HC_05                BLUETOOTH_SMD         Bluetooth HC-05            1
+Y1       12.000MHz      CRYSTAL5X3           CRYSTAL-SMD-5X3       SparkFun-FreqCtrl          1

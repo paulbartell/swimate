@@ -4004,6 +4004,7 @@ This standard 0.05" 10-pin connector is for use with the Cortex M0/M3's native S
 <part name="C11" library="SparkFun-Capacitors" deviceset="CAP" device="1206" value="1uF"/>
 <part name="C12" library="SparkFun-Capacitors" deviceset="CAP" device="1206" value="1uF"/>
 <part name="GND18" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="C13" library="SparkFun-Capacitors" deviceset="CAP" device="1206" value=".22uF"/>
 </parts>
 <sheets>
 <sheet>
@@ -4073,8 +4074,9 @@ This standard 0.05" 10-pin connector is for use with the Cortex M0/M3's native S
 <instance part="GND16" gate="1" x="193.04" y="-15.24"/>
 <instance part="GND17" gate="1" x="-363.22" y="-35.56"/>
 <instance part="C11" gate="G$1" x="-373.38" y="-25.4"/>
-<instance part="C12" gate="G$1" x="-284.48" y="-20.32"/>
+<instance part="C12" gate="G$1" x="-274.32" y="-22.86"/>
 <instance part="GND18" gate="1" x="-297.18" y="-35.56"/>
+<instance part="C13" gate="G$1" x="-289.56" y="-22.86"/>
 </instances>
 <busses>
 </busses>
@@ -4267,8 +4269,13 @@ This standard 0.05" 10-pin connector is for use with the Cortex M0/M3's native S
 <segment>
 <pinref part="U6" gate="A" pin="PGND"/>
 <wire x1="-299.72" y1="-20.32" x2="-297.18" y2="-20.32" width="0.1524" layer="91"/>
-<wire x1="-297.18" y1="-20.32" x2="-297.18" y2="-33.02" width="0.1524" layer="91"/>
+<wire x1="-297.18" y1="-20.32" x2="-297.18" y2="-30.48" width="0.1524" layer="91"/>
 <pinref part="GND18" gate="1" pin="GND"/>
+<wire x1="-297.18" y1="-30.48" x2="-297.18" y2="-33.02" width="0.1524" layer="91"/>
+<wire x1="-274.32" y1="-30.48" x2="-297.18" y2="-30.48" width="0.1524" layer="91"/>
+<junction x="-297.18" y="-30.48"/>
+<pinref part="C12" gate="G$1" pin="2"/>
+<wire x1="-274.32" y1="-30.48" x2="-274.32" y2="-25.4" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="3.3V" class="0">
@@ -4593,10 +4600,35 @@ This standard 0.05" 10-pin connector is for use with the Cortex M0/M3's native S
 <wire x1="-297.18" y1="0" x2="-297.18" y2="-12.7" width="0.1524" layer="91"/>
 <pinref part="U6" gate="A" pin="OUT"/>
 <wire x1="-297.18" y1="-12.7" x2="-299.72" y2="-12.7" width="0.1524" layer="91"/>
-<pinref part="C12" gate="G$1" pin="1"/>
-<wire x1="-297.18" y1="-12.7" x2="-284.48" y2="-12.7" width="0.1524" layer="91"/>
-<wire x1="-284.48" y1="-12.7" x2="-284.48" y2="-15.24" width="0.1524" layer="91"/>
+<wire x1="-297.18" y1="-12.7" x2="-274.32" y2="-12.7" width="0.1524" layer="91"/>
 <junction x="-297.18" y="-12.7"/>
+<pinref part="C12" gate="G$1" pin="1"/>
+<wire x1="-274.32" y1="-17.78" x2="-274.32" y2="-12.7" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$13" class="0">
+<segment>
+<pinref part="U6" gate="A" pin="CXP"/>
+<pinref part="C13" gate="G$1" pin="1"/>
+<wire x1="-299.72" y1="-15.24" x2="-289.56" y2="-15.24" width="0.1524" layer="91"/>
+<wire x1="-289.56" y1="-15.24" x2="-289.56" y2="-17.78" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$14" class="0">
+<segment>
+<pinref part="C13" gate="G$1" pin="2"/>
+<wire x1="-289.56" y1="-25.4" x2="-289.56" y2="-27.94" width="0.1524" layer="91"/>
+<wire x1="-289.56" y1="-27.94" x2="-294.64" y2="-27.94" width="0.1524" layer="91"/>
+<wire x1="-294.64" y1="-27.94" x2="-294.64" y2="-17.78" width="0.1524" layer="91"/>
+<pinref part="U6" gate="A" pin="CXN"/>
+<wire x1="-294.64" y1="-17.78" x2="-299.72" y2="-17.78" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="3V3_ENABLE" class="0">
+<segment>
+<pinref part="U6" gate="A" pin="*SHDN"/>
+<wire x1="-360.68" y1="-15.24" x2="-373.38" y2="-15.24" width="0.1524" layer="91"/>
+<label x="-378.46" y="-15.24" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>

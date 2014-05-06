@@ -6013,18 +6013,6 @@ This is the "EZ" version, which has limited top masking for improved ease of ass
 <label x="55.88" y="-7.62" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$2" class="0">
-<segment>
-<pinref part="IC1" gate="G$1" pin="PIO1.26/CT32B0M2/RXD"/>
-<wire x1="55.88" y1="38.1" x2="66.04" y2="38.1" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$3" class="0">
-<segment>
-<pinref part="IC1" gate="G$1" pin="PIO1.27/CT32B0M3/TXD"/>
-<wire x1="55.88" y1="35.56" x2="66.04" y2="35.56" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$6" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="PIO1.21/DCD/MISO1"/>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="6.4">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -5185,6 +5185,8 @@ This is the "EZ" version, which has limited top masking for improved ease of ass
 <part name="GND31" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SW_MODE" library="SparkFun-Electromechanical" deviceset="TAC_SWITCH" device="KSA_SEALED"/>
 <part name="GND32" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="R1" library="SparkFun-Passives" deviceset="RESISTOR" device="0603-RES" value="10k"/>
+<part name="R13" library="SparkFun-Passives" deviceset="RESISTOR" device="0603-RES" value="24k"/>
 </parts>
 <sheets>
 <sheet>
@@ -5248,7 +5250,7 @@ This is the "EZ" version, which has limited top masking for improved ease of ass
 <instance part="GND19" gate="1" x="180.34" y="25.4"/>
 <instance part="C14" gate="G$1" x="-233.68" y="2.54" rot="R180"/>
 <instance part="J2" gate="G$1" x="-243.84" y="15.24"/>
-<instance part="GND20" gate="1" x="-233.68" y="-12.7"/>
+<instance part="GND20" gate="1" x="-233.68" y="-25.4"/>
 <instance part="JP3" gate="G$1" x="149.86" y="20.32"/>
 <instance part="GND21" gate="1" x="-294.64" y="33.02"/>
 <instance part="GND22" gate="1" x="-220.98" y="30.48"/>
@@ -5269,7 +5271,7 @@ This is the "EZ" version, which has limited top masking for improved ease of ass
 <instance part="R11" gate="G$1" x="124.46" y="20.32"/>
 <instance part="R12" gate="G$1" x="124.46" y="27.94"/>
 <instance part="SUPPLY10" gate="G$1" x="73.66" y="-15.24" rot="R180"/>
-<instance part="GND27" gate="1" x="106.68" y="-2.54"/>
+<instance part="GND27" gate="1" x="106.68" y="-5.08"/>
 <instance part="GND28" gate="1" x="91.44" y="-2.54"/>
 <instance part="C16" gate="G$1" x="91.44" y="7.62" rot="R180"/>
 <instance part="C17" gate="G$1" x="106.68" y="7.62" rot="R180"/>
@@ -5288,6 +5290,8 @@ This is the "EZ" version, which has limited top masking for improved ease of ass
 <instance part="GND31" gate="1" x="-78.74" y="-27.94"/>
 <instance part="SW_MODE" gate="S" x="-248.92" y="-35.56"/>
 <instance part="GND32" gate="1" x="-261.62" y="-48.26"/>
+<instance part="R1" gate="G$1" x="-205.74" y="15.24" rot="R90"/>
+<instance part="R13" gate="G$1" x="-205.74" y="-10.16" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -5308,7 +5312,8 @@ This is the "EZ" version, which has limited top masking for improved ease of ass
 <label x="-233.68" y="7.62" size="1.778" layer="95" rot="R90"/>
 <pinref part="U7" gate="A" pin="BATT"/>
 <wire x1="-231.14" y1="40.64" x2="-226.06" y2="40.64" width="0.1524" layer="91"/>
-<wire x1="-226.06" y1="40.64" x2="-226.06" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="-226.06" y1="40.64" x2="-226.06" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="-226.06" y1="22.86" x2="-226.06" y2="7.62" width="0.1524" layer="91"/>
 <wire x1="-226.06" y1="7.62" x2="-233.68" y2="7.62" width="0.1524" layer="91"/>
 <junction x="-233.68" y="7.62"/>
 <wire x1="-226.06" y1="40.64" x2="-208.28" y2="40.64" width="0.1524" layer="91"/>
@@ -5321,6 +5326,10 @@ This is the "EZ" version, which has limited top masking for improved ease of ass
 <wire x1="-208.28" y1="45.72" x2="-198.12" y2="45.72" width="0.1524" layer="91"/>
 <junction x="-198.12" y="45.72"/>
 <label x="-218.44" y="40.64" size="1.778" layer="95"/>
+<pinref part="R1" gate="G$1" pin="2"/>
+<wire x1="-205.74" y1="20.32" x2="-205.74" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="-205.74" y1="22.86" x2="-226.06" y2="22.86" width="0.1524" layer="91"/>
+<junction x="-226.06" y="22.86"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -5456,9 +5465,14 @@ This is the "EZ" version, which has limited top masking for improved ease of ass
 <wire x1="-243.84" y1="10.16" x2="-243.84" y2="-7.62" width="0.1524" layer="91"/>
 <wire x1="-243.84" y1="-7.62" x2="-233.68" y2="-7.62" width="0.1524" layer="91"/>
 <pinref part="C14" gate="G$1" pin="1"/>
-<wire x1="-233.68" y1="-7.62" x2="-233.68" y2="-10.16" width="0.1524" layer="91"/>
+<wire x1="-233.68" y1="-7.62" x2="-233.68" y2="-17.78" width="0.1524" layer="91"/>
+<wire x1="-233.68" y1="-17.78" x2="-233.68" y2="-22.86" width="0.1524" layer="91"/>
 <wire x1="-233.68" y1="-2.54" x2="-233.68" y2="-7.62" width="0.1524" layer="91"/>
 <junction x="-233.68" y="-7.62"/>
+<pinref part="R13" gate="G$1" pin="1"/>
+<wire x1="-205.74" y1="-15.24" x2="-205.74" y2="-17.78" width="0.1524" layer="91"/>
+<wire x1="-205.74" y1="-17.78" x2="-233.68" y2="-17.78" width="0.1524" layer="91"/>
+<junction x="-233.68" y="-17.78"/>
 </segment>
 <segment>
 <pinref part="U7" gate="A" pin="GND_2"/>
@@ -5550,7 +5564,7 @@ This is the "EZ" version, which has limited top masking for improved ease of ass
 <segment>
 <pinref part="C17" gate="G$1" pin="1"/>
 <pinref part="GND27" gate="1" pin="GND"/>
-<wire x1="106.68" y1="2.54" x2="106.68" y2="0" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="2.54" x2="106.68" y2="-2.54" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R2" gate="G$1" pin="1"/>
@@ -6231,6 +6245,16 @@ This is the "EZ" version, which has limited top masking for improved ease of ass
 <wire x1="-241.3" y1="-38.1" x2="-231.14" y2="-38.1" width="0.1524" layer="91"/>
 <junction x="-241.3" y="-38.1"/>
 <label x="-238.76" y="-38.1" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="VBATTMON" class="0">
+<segment>
+<pinref part="R13" gate="G$1" pin="2"/>
+<wire x1="-205.74" y1="-5.08" x2="-190.5" y2="-5.08" width="0.1524" layer="91"/>
+<junction x="-205.74" y="-5.08"/>
+<label x="-198.12" y="-5.08" size="1.778" layer="95"/>
+<pinref part="R1" gate="G$1" pin="1"/>
+<wire x1="-205.74" y1="10.16" x2="-205.74" y2="-5.08" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

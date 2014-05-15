@@ -1354,7 +1354,8 @@ design rules under a new name.</description>
 <via x="38.89" y="19.53" extent="1-16" drill="0.5" shape="octagon"/>
 <wire x1="38.89" y1="19.53" x2="38.89" y2="19.84" width="0.254" layer="16"/>
 <wire x1="38.89" y1="19.84" x2="43.18" y2="24.13" width="0.254" layer="16"/>
-<wire x1="43.18" y1="24.13" x2="43.18" y2="31.1912" width="0.254" layer="16"/>
+<wire x1="43.18" y1="24.13" x2="43.18" y2="27.94" width="0.254" layer="16"/>
+<wire x1="43.18" y1="27.94" x2="43.18" y2="31.1912" width="0.254" layer="16"/>
 <wire x1="43.18" y1="31.1912" x2="41.9862" y2="32.385" width="0.254" layer="16" curve="90"/>
 <wire x1="34.29" y1="8.89" x2="28.84" y2="7.62" width="0" layer="19" extent="1-16"/>
 </signal>

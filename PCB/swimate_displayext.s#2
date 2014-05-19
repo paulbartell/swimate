@@ -6331,9 +6331,9 @@ at 27/07/2012 14:48:47</description>
 <wire x1="-50.8" y1="-58.42" x2="-38.1" y2="-58.42" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="IC1" gate="G$1" pin="TDO/PIO0.13/AD2/CB32B1M0"/>
-<wire x1="-38.1" y1="35.56" x2="-50.8" y2="35.56" width="0.1524" layer="91"/>
-<label x="-50.8" y="35.56" size="1.778" layer="95"/>
+<pinref part="IC1" gate="G$1" pin="PIO1.13/DTR/CT16B0M1/TXD"/>
+<wire x1="55.88" y1="81.28" x2="66.04" y2="81.28" width="0.1524" layer="91"/>
+<label x="58.42" y="81.28" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$16" class="0">
@@ -6541,7 +6541,12 @@ at 27/07/2012 14:48:47</description>
 <wire x1="-241.3" y1="81.28" x2="-231.14" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="PODISABLE" class="0">
+<net name="PO_DISABLE" class="0">
+<segment>
+<pinref part="IC1" gate="G$1" pin="TDO/PIO0.13/AD2/CB32B1M0"/>
+<wire x1="-38.1" y1="35.56" x2="-50.8" y2="35.56" width="0.1524" layer="91"/>
+<label x="-53.34" y="35.56" size="1.778" layer="95"/>
+</segment>
 <segment>
 <pinref part="U3" gate="A" pin="B"/>
 <wire x1="-231.14" y1="78.74" x2="-248.92" y2="78.74" width="0.1524" layer="91"/>
@@ -6555,7 +6560,6 @@ at 27/07/2012 14:48:47</description>
 <approved hash="104,1,160.02,-43.18,U5,VCC,3.3V,,,"/>
 <approved hash="104,1,-124.46,43.18,U6,PGND,GND,,,"/>
 <approved hash="104,1,-292.1,43.18,U7,GND_2,GND,,,"/>
-<approved hash="104,1,-205.74,86.36,U8,VCC,VBAT,,,"/>
 </errors>
 </schematic>
 </drawing>

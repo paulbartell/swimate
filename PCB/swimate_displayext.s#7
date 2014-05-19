@@ -6216,6 +6216,11 @@ at 27/07/2012 14:48:47</description>
 <wire x1="-38.1" y1="35.56" x2="-50.8" y2="35.56" width="0.1524" layer="91"/>
 <label x="-50.8" y="35.56" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="IC1" gate="G$1" pin="PIO1.11"/>
+<wire x1="55.88" y1="86.36" x2="68.58" y2="86.36" width="0.1524" layer="91"/>
+<label x="58.42" y="86.36" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="N$13" class="0">
 <segment>
@@ -6331,9 +6336,9 @@ at 27/07/2012 14:48:47</description>
 <wire x1="-50.8" y1="-58.42" x2="-38.1" y2="-58.42" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="IC1" gate="G$1" pin="PIO1.11"/>
-<wire x1="55.88" y1="86.36" x2="68.58" y2="86.36" width="0.1524" layer="91"/>
-<label x="58.42" y="86.36" size="1.778" layer="95"/>
+<pinref part="IC1" gate="G$1" pin="NTRST/PIO0.14/AD3/CT32B1M1"/>
+<wire x1="-38.1" y1="33.02" x2="-50.8" y2="33.02" width="0.1524" layer="91"/>
+<label x="-53.34" y="33.02" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$16" class="0">

@@ -5840,9 +5840,7 @@ at 09/08/2012 14:34:25</description>
 <wire x1="-236.22" y1="73.66" x2="-231.14" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="J1" gate="A" pin="6"/>
 <pinref part="J1" gate="A" pin="8"/>
-<wire x1="-106.68" y1="-45.72" x2="-106.68" y2="-48.26" width="0.1524" layer="91"/>
 <pinref part="J1" gate="A" pin="10"/>
 <wire x1="-106.68" y1="-48.26" x2="-106.68" y2="-50.8" width="0.1524" layer="91"/>
 <junction x="-106.68" y="-48.26"/>
@@ -6155,6 +6153,11 @@ at 09/08/2012 14:34:25</description>
 <pinref part="IC1" gate="G$1" pin="PIO0.8/MISO0/CT16B0M0"/>
 <wire x1="-38.1" y1="48.26" x2="-45.72" y2="48.26" width="0.1524" layer="91"/>
 <label x="-50.8" y="48.26" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="J1" gate="A" pin="6"/>
+<wire x1="-106.68" y1="-45.72" x2="-96.52" y2="-45.72" width="0.1524" layer="91"/>
+<label x="-106.68" y="-45.72" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SD_DETECT" class="0">

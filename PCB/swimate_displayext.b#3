@@ -1872,9 +1872,9 @@ design rules under a new name.</description>
 <wire x1="20.32" y1="33.274" x2="19.177" y2="35.052" width="0.254" layer="1"/>
 <wire x1="19.177" y1="35.052" x2="19.177" y2="37.211" width="0.254" layer="1"/>
 <wire x1="11.29" y1="42.13" x2="19.397" y2="42.13" width="0.254" layer="16"/>
-<wire x1="19.397" y1="42.13" x2="19.431" y2="42.164" width="0.254" layer="16"/>
-<via x="19.431" y="42.164" extent="1-16" drill="0.6"/>
-<wire x1="19.431" y1="42.164" x2="19.431" y2="37.465" width="0.254" layer="1"/>
+<wire x1="19.397" y1="42.13" x2="19.685" y2="42.037" width="0.254" layer="16"/>
+<via x="19.685" y="42.037" extent="1-16" drill="0.6"/>
+<wire x1="19.685" y1="42.037" x2="19.431" y2="37.465" width="0.254" layer="1"/>
 <wire x1="19.431" y1="37.465" x2="19.177" y2="37.211" width="0.254" layer="1"/>
 </signal>
 <signal name="SPI0_MOSI">

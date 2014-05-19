@@ -6560,7 +6560,6 @@ at 27/07/2012 14:48:47</description>
 <approved hash="104,1,160.02,-43.18,U5,VCC,3.3V,,,"/>
 <approved hash="104,1,-124.46,43.18,U6,PGND,GND,,,"/>
 <approved hash="104,1,-292.1,43.18,U7,GND_2,GND,,,"/>
-<approved hash="104,1,-205.74,86.36,U8,VCC,VBAT,,,"/>
 </errors>
 </schematic>
 </drawing>

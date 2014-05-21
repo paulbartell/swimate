@@ -6858,6 +6858,22 @@ at 09/08/2012 14:34:25</description>
 <approved hash="104,1,160.02,-43.18,U5,VCC,3.3V,,,"/>
 <approved hash="104,1,-124.46,43.18,U6,PGND,GND,,,"/>
 <approved hash="104,1,-292.1,43.18,U7,GND_2,GND,,,"/>
+<approved hash="206,1,-185.42,50.8,3.3V,,,,,"/>
+<approved hash="206,1,-124.46,50.8,3.3V,,,,,"/>
+<approved hash="208,1,88.9,86.36,3.3V,sup,,,,"/>
+<approved hash="208,1,83.82,-45.72,3.3V,sup,,,,"/>
+<approved hash="208,1,-162.56,111.76,3.3V,sup,,,,"/>
+<approved hash="208,1,-134.62,124.46,3.3V,sup,,,,"/>
+<approved hash="208,1,187.96,104.14,3.3V,sup,,,,"/>
+<approved hash="208,1,147.32,-40.64,3.3V,sup,,,,"/>
+<approved hash="208,1,73.66,-15.24,3.3V,sup,,,,"/>
+<approved hash="208,1,114.3,81.28,3.3V,sup,,,,"/>
+<approved hash="208,1,-185.42,50.8,3.3V,out,,,,"/>
+<approved hash="208,1,-124.46,50.8,3.3V,out,,,,"/>
+<approved hash="208,1,-101.6,55.88,3.3V,sup,,,,"/>
+<approved hash="208,1,-58.42,114.3,3.3V,sup,,,,"/>
+<approved hash="208,1,-83.82,-40.64,3.3V,sup,,,,"/>
+<approved hash="208,1,-33.02,-48.26,3.3V,sup,,,,"/>
 </errors>
 </schematic>
 </drawing>

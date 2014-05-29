@@ -1,0 +1,64 @@
+IC1	1	PIO1.0/CT32B1M0	io	DISP_CS		
+	2	PIO1.25/CT32B0M1	io	DISP_DC		
+	3	PIO1.19/DTR/SSEL1	io	SD_CS		
+	4	PIO0.0/NRESET	io	RST		
+	5	PIO0.1/CLKOUT/CT32B0M2/USB_FTOG	io	BOOTLOAD		
+	6	PIO1.7	io	***	unconnected	***
+	7	VSS	io	GND		
+	8	XTALIN	io	N$23		
+	9	XTALOUT	io	N$24		
+	10	VDD	io	3.3V		
+	11	PIO0.20/CT16B1C0	io	***	unconnected	***
+	12	PIO1.10	io	***	unconnected	***
+	13	PIO0.2/SSEL0/CT16B0C0	io	***	unconnected	***
+	14	PIO1.26/CT32B0M2/RXD	io	***	unconnected	***
+	15	PIO1.27/CT32B0M3/TXD	io	***	unconnected	***
+	16	PIO1.4/CT32B1C0	io	MPU_INT		
+	17	PIO1.1/CT32B1M1	io	***	unconnected	***
+	18	PIO1.20/DSR/SCK1	io	SPI1_SCK		
+	19	PIO0.3/USB_VBUS	io	VUSB		
+	20	PIO0.4/SCL(OD)	io	I2C_SCL		
+	21	PIO0.5/SDA(OD)	io	I2C_SDA		
+	22	PIO0.21/CT16B1M0/MOSI1	io	***	unconnected	***
+	23	PIO1.17/CT16B0C1/RXD	io	SW_MODE		
+	24	PIO1.23/CT16B1M1/SSEL1	io	***	unconnected	***
+	25	USB_D-	io	USBD_N		
+	26	USB_D+	io	USBD_P		
+	27	PIO1.24/CT32B0M0	io	***	unconnected	***
+	28	PIO1.18/CT16B1C1/TXD	io	***	unconnected	***
+	29	PIO0.6/USB_CON/SCK0	io	USB_SCON		
+	30	PIO0.7/CTS	io	***	unconnected	***
+	31	PIO1.28/CT32B0C0/SCLK	io	***	unconnected	***
+	32	PIO1.5/CT32B1C1	io	***	unconnected	***
+	33	VDD	io	3.3V		
+	34	PIO1.2/CT32B1M2	io	***	unconnected	***
+	35	PIO1.21/DCD/MISO1	io	SPI1_MISO		
+	36	PIO0.8/MISO0/CT16B0M0	io	SPI0_MISO		
+	37	PIO0.9/MOSI0/CT16B0M1	io	SPI0_MOSI		
+	38	SWCLK/PIO0.10/SCK0/CT16B0M2	io	SPI0_SCK		
+	39	PIO1.8	io	***	unconnected	***
+	40	PIO0.22/AD6/CT16B1M1/MISO1	io	VBATMON		
+	41	PIO1.29/SCK0/CT32B0C1	io	***	unconnected	***
+	42	TDI/PIO0.11/AD0/CT32B0M3	io	***	unconnected	***
+	43	PIO1.11	io	SW_PWR_STATE		
+	44	TMS/PIO0.12/AD1/CT32B1M0	io	***	unconnected	***
+	45	TDO/PIO0.13/AD2/CB32B1M0	io	PO_DISABLE		
+	46	NTRST/PIO0.14/AD3/CT32B1M1	io	BT_KEY		
+	47	PIO1.13/DTR/CT16B0M1/TXD	io	BT_ENABLE		
+	48	VDD	io	3.3V		
+	49	PIO1.14/DSR/CT16B0M1/RXD	io	***	unconnected	***
+	50	PIO1.3/CT32B1M3	io	DISP_SW		
+	51	PIO1.22/RI/MOSI1	io	SPI1_MOSI		
+	52	SWDIO/PIO0.15/AD4/CT32B1M2	io	SWDIO		
+	53	PIO0.16/AD5/CT32B1M3/WAKEUP	io	***	unconnected	***
+	54	VSS	io	GND		
+	55	PIO1.9	io	***	unconnected	***
+	56	PIO0.23/AD7	io	***	unconnected	***
+	57	PIO1.15/DCD/CT16B0M2/SCK1	io	***	unconnected	***
+	58	VDD	io	3.3V		
+	59	PIO1.12	io	***	unconnected	***
+	60	PIO0.17/RTS/CT32B0C0/SCLK	io	***	unconnected	***
+	61	PIO0.18/RXD/CT32B0M0	io	MCU_RX		
+	62	PIO0.19/TXD/CT32B0M1	io	MCU_TX		
+	63	PIO1.16/RI/CT16B0C0	io	BT_RST		
+	64	PIO1.6	io	DISP_RST		
